@@ -1,6 +1,8 @@
 <h1>Request Method : GET</h1>
 
 <?php
+
+  if (isset($_POST['usuario'])){
   if($_POST['usuario'] == "admim" &&  $_POST['Senha'] == 123){
     echo "Usuário logado";
   }else{
