@@ -20,6 +20,7 @@
   </div>
 </div>
   <?php endforeach; ?>
+  
 </div>
 </div>
 <!-- Fim noticias -->
