@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto JS -> JSON</title>
+</head>
+<body>
+    <script>
+        // criando um objeto
+        var disciplina = new Object();
+
+        var nome = prompt("Digite o nome da disciplina:");
+        var professor = prompt("Digite o nome do professor:");
+        var carga_horaria = prompt("Digite o tempo de carga horaria:");
+        var periodo = prompt("Digite o periodo em que a disciplina é oferecida:");
+
+        disciplina.nome = nome;
+        disciplina.professor = professor;
+        disciplina.carga_horaria = carga_horaria;
+        disciplina.periodo = periodo;
+        console.log(disciplina);
+
+        var x =JSON.stringify(disciplina);
+        console.log(x);
+
+        var y = JSON.parse(x);
+        console.log(y);
+
+        </script>
+</body>
+</html>
