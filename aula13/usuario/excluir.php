@@ -17,14 +17,7 @@
    //executa o comando
    $comando->execute();
 
-   //volta para o formulário
-   header("Location: ../form_usuario.php");
-
-   
-
-
-
-
-
+   //volta para a listagem de usuários
+   header("Location: ../usuarios.php");
 
 
