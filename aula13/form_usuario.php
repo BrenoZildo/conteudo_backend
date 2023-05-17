@@ -16,8 +16,8 @@
 
     <form action=<?php echo isset($usuario) ? 
                         "usuario/atualizar.php":
-                        "usuario/inserir.php";?>
-    "usuario/inserir.php" method="post">
+                        "usuario/inserir.php"; ?>
+    method="post" enctype="multipart/form-data">
     
         <input type="hidden" name="idusuario" value="<?php echo $usuario->idusuario ?? "" ;?>"><br>
         
@@ -28,7 +28,10 @@
         <input type="text" name="login" value="<?php echo $usuario->login ?? "" ;?>"><br>
 
         <label>Senha</label><br>
-        <input type="password" name="senha" value="<?php echo $usuario->senha ?? "" ;?>"><br>
+        <input type="password" name="senha"> <br>
+
+        <label>Foto</label><br>
+        <input type="file" name="foto"> <br>
 
         <button type="submit">Inserir</button>
     </form>
