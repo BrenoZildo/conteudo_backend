@@ -1,7 +1,7 @@
 <?php
    
    //importa o arquivo de conexão
-   require_once "conexao.php";
+   require_once "../banco/conexao.php";
 
    //verifica se foi enviado o param id para URL
    if(isset($_GET['id'])){
