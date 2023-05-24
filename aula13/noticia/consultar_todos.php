@@ -18,6 +18,6 @@
    //pega a primeira linha de resultado da consulta
    $noticias = [];
    while ($noticia = $resultados->fetch_object()){
-      $noticia[] = $noticia;
+      $noticias[] = $noticia;
    }
 
