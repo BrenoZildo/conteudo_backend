@@ -41,4 +41,6 @@ require_once "../template/cabecalho.php";
   </tbody>
 </table>
 </div>
-<?php require_once "../template/rodape.php"; ?>
+<?php require_once "../template/rodape.php"; 
+      require_once "../template/menu_restrito.php";
+?>
