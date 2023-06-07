@@ -1,7 +1,8 @@
 <?php
+
    include_once "../noticia/consultar_todos.php";
    include_once "../template/cabecalho.php";
-   include_once "../template/menu_restrito.php";
+   include_once "../template/menu.php";
 ?>
 <!-- Noticias -->
 <div class="container">
@@ -19,7 +20,6 @@
   </div>
 </div>
   <?php endforeach; ?>
-  
 </div>
 </div>
 <!-- Fim noticias -->
