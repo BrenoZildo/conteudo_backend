@@ -1,38 +1,29 @@
 <?php
-   
-   //importa o arquivo de conexão
-   require_once "../banco/conect.php";
+   // importa o arquivo de conexão
+   require_once "../banco/conexao.php";
 
-   //verifica se o nome, login e senha foram enviados
-   //do formulário de cadastro
-   if(isset($_POST['nome']) && isset($_POST['idade'])
-   && isset($_POST['email']) && isset($_POST['endereco'])) {
+   // verifica se o nome, login e senha foram enviados
+   // do formulário de cadastro
+   if(isset($_POST['idusuario']) && isset($_POST['nome']) && isset($_POST['idade']) && isset($_POST['email']) && isset($_POST['endereco'])) {
+      $idusuario = $_POST['idusuario'];
+      $nome = $_POST['nome'];
+      $idade = $_POST['idade'];
+      $email = $_POST['email'];
+      $endereco = $_POST['endereco'];
 
-   $nome = $_POST['nome'];
-   $idade = $_POST['idade'];
-   $email = $_POST['email'];
-   $endereco = $_POST['endereco'];
+      // cria uma variável com um comando SQL
+      $SQL = "INSERT INTO `info`.`usuario` (`idusuario`, `nome`, `idade`, `email`, `endereco`) VALUES (?, ?, ?, ?, ?);";
 
-   //cria uma variável com um comando SQL
-   $SQL = "INSERT INTO `mydb`.`usuario` (`idusuario`, `nome`, `idade`, `email`, `endereco`) VALUES (?, ?, ?, ?);";
- 
-   //prepara o comando para ser executado no mysql
-   $comando = $conexao->prepare($SQL);
+      // prepara o comando para ser executado no mysql
+      $comando = $conexao->prepare($SQL);
 
-   //faz a vinculação dos parâmetros ?, ?, ?
-   $comando->bind_param("ssss", $nome, $idade, $email, $endereco);
+      // faz a vinculação dos parâmetros ?, ?, ?, ?, ?
+      $comando->bind_param("issss", $idusuario, $nome, $idade, $email, $endereco);
 
-   //executa o comando
-   $comando->execute();
+      // executa o comando
+      $comando->execute();
    }
-   //volta para o formulário
-   header("Location: index.php");
-
    
-
-
-
-
-
-
+   // volta para o formulário
+   header("Location: index.php");
 

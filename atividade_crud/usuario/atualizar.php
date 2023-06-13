@@ -1,13 +1,13 @@
 <?php
    
    //importa o arquivo de conexão
-   require_once "../banco/conect.php";
+   require_once "../banco/conexao.php";
 
-   $id = $_POST['idusuario'];
    $nome = $_POST['nome'];
    $idade = $_POST['idade'];
    $email = $_POST['email'];
    $endereco = $_POST['endereco'];
+   $idusuario = $_POST['idusuario'];
 
    //cria uma variável com um comando SQL
    $SQL = "UPDATE `usuario` SET `nome`= ?, `idade`= ?, `email`= ?, `endereco`= ?  WHERE  `idusuario`= ? ;";
@@ -16,7 +16,7 @@
    $comando = $conexao->prepare($SQL);
 
    //faz a vinculação dos parâmetros ?, ?, ?
-   $comando->bind_param("ssssi", $nome, $idade, $email, $endereco, $id);
+   $comando->bind_param("ssssi", $nome, $idade, $email, $endereco, $idusuario);
 
    //executa o comando
    $comando->execute();

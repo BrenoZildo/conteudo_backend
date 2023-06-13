@@ -1,7 +1,7 @@
 <?php
    
    //importa o arquivo de conexão
-   require_once "../banco/conect.php";
+   require_once "../banco/conexao.php";
 
    $id = $_GET['id'];
 
