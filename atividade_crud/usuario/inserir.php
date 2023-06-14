@@ -1,7 +1,7 @@
 <?php
    // importa o arquivo de conexão
 <<<<<<< HEAD
-   require_once "../banco/conexao.php";
+
 =======
    require_once "../banco/conect.php";
 >>>>>>> ec4b40a (auto_incremento)
