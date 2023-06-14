@@ -1,5 +1,5 @@
 <?php
-   // importa o arquivo de conexão
+   // importa o arquivo de conexão  
    require_once "../banco/conect.php";
 
    // verifica se o nome, login e senha foram enviados
