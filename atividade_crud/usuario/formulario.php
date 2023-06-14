@@ -6,10 +6,7 @@
     <h1>Cadastro de usuário</h1>
     <hr>
 
-    <form action=<?php echo isset($usuario) ? 
-                        "atualizar.php":
-                        "inserir.php"; ?>
-    method="post" enctype="multipart/form-data">
+    <form action="<?php echo isset($usuario) ? "atualizar.php":  "inserir.php"; ?>"    method="post" enctype="multipart/form-data">
     
         <input type="hidden" name="idusuario" value="<?php echo $usuario->idusuario ?? "" ;?>"><br>
         
