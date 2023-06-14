@@ -1,10 +1,6 @@
 <?php
    // importa o arquivo de conexão
-<<<<<<< HEAD
-
-=======
    require_once "../banco/conect.php";
->>>>>>> ec4b40a (auto_incremento)
 
    // verifica se o nome, login e senha foram enviados
    // do formulário de cadastro
@@ -16,11 +12,8 @@
       $endereco = $_POST['endereco'];
 
       // cria uma variável com um comando SQL
-<<<<<<< HEAD
-      $SQL = "INSERT INTO `info`.`usuario` (`idusuario`, `nome`, `idade`, `email`, `endereco`) VALUES (?, ?, ?, ?, ?);";
-=======
+
       $SQL = "INSERT INTO `mydb`.`usuario` (`idusuario`, `nome`, `idade`, `email`, `endereco`) VALUES (?, ?, ?, ?, ?);";
->>>>>>> ec4b40a (auto_incremento)
 
       // prepara o comando para ser executado no mysql
       $comando = $conexao->prepare($SQL);
