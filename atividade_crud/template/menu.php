@@ -11,11 +11,25 @@
 
       <li class="nav-item">
           <a class="nav-link" 
+<<<<<<< HEAD
             href="../usuario/usuario.php">
+=======
+            href="../usuario/index.php">
+>>>>>>> 64d1e59 (finalizadou)
             Usuários cadastrados
           </a>
         </li>
 
+<<<<<<< HEAD
+=======
+        <li class="nav-item">
+          <a class="nav-link" 
+            href="../usuario/inserir.php">
+            Inserir novo usuário
+          </a>
+        </li>
+
+>>>>>>> 64d1e59 (finalizadou)
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
