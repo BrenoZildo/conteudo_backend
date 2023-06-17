@@ -2,7 +2,7 @@
 
 <!-- Rodape -->
 <footer class="bg-dark p-3 text-white text-center">
-    Created by: Zildo@2023
+  © Copyright by - Zildo2023
 </footer>
 
 
